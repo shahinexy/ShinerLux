@@ -17,93 +17,92 @@
       "about": "Experience unparalleled luxury at our oceanfront villa in Maui, Hawaii. Indulge in breathtaking views of the Pacific Ocean from the comfort of your own private retreat. Whether you're lounging by the infinity pool, enjoying gourmet meals in the outdoor living areas, or relaxing on the pristine beach, this villa offers the ultimate tropical getaway."
     },
     {
-      "id": "002",
-      "image": "https://i.ibb.co/85dy0Tr/Bali-mountain-retreat.jpg",
-      "estate_title": "Mountain Retreat",
-      "segment_name": "Nature Retreat",
-      "description": "Secluded mountain retreat nestled in the Rockies. Perfect for nature lovers and outdoor enthusiasts. Features hot tub, fireplace, and panoramic views.",
-      "price": {
-        "sell": 3000000,
-        "rent": 15000
-      },
-      "status": {"sell": true, "rent": true},
-      "area_sqft": 4000,
-      "location": "Aspen, Colorado",
-      "facilities": ["Hot tub", "Fireplace", "Panoramic views", "Fully equipped kitchen", "Hiking trails nearby"],
-      "rant_package_facilities": ["Housekeeping", "Mountain guide", "Ski equipment rental"],
-      "about": "Escape to a secluded mountain retreat in Aspen, Colorado, where panoramic views and outdoor adventures await. This cozy villa offers the perfect blend of rustic charm and modern amenities. Whether you're soaking in the hot tub, cozying up by the fireplace, or exploring nearby hiking trails, this retreat is the ultimate nature lover's paradise."
-    },
-    {
-      "id": "003",
-      "image": "https://i.ibb.co/qszqBws/Luxury-house-design-Top-10-tips-to-add-luxury-to-your-house-FEATURE-compressed.jpg",
-      "estate_title": "Luxury Mansion",
+      "id": "PH001",
+      "image": "https://i.ibb.co/mN2xb9P/Get-Media-2020-10-20-T161504-719.jpg",
+      "estate_title": "Luxury Penthouse",
       "segment_name": "Luxury",
-      "description": "Exquisite luxury mansion in the heart of Beverly Hills. Designed for discerning guests seeking opulence and sophistication.",
+      "description": "Exquisite luxury penthouse located in the heart of Manhattan. Boasting panoramic views of the city skyline, this penthouse offers unparalleled elegance and sophistication.",
       "price": {
         "sell": 10000000,
         "rent": 35000
       },
       "status": {"sell": true, "rent": true},
-      "area_sqft": 10000,
-      "location": "Beverly Hills, California",
-      "facilities": ["Swimming pool", "Jacuzzi", "Fitness center", "Wine cellar", "Private chef available"],
-      "rant_package_facilities": ["Housekeeping", "Chauffeur service", "Personal chef"],
-      "about": "Indulge in luxury at this exquisite mansion in Beverly Hills, California. Boasting lavish amenities such as a swimming pool, jacuzzi, and wine cellar, this mansion offers the epitome of sophistication and comfort. Whether you're hosting lavish events or enjoying intimate gatherings, this mansion provides the perfect backdrop for unforgettable experiences."
+      "area_sqft": 3000,
+      "location": "Manhattan, New York",
+      "facilities": ["Floor-to-ceiling windows", "Private terrace", "High-end appliances", "Spa-like bathrooms", "24-hour concierge"],
+      "rant_package_facilities": ["Housekeeping", "Personal chef", "Chauffeur service"],
+      "about": "Indulge in luxury living at this stunning penthouse in the heart of Manhattan, New York. With floor-to-ceiling windows offering breathtaking views of the city, a private terrace for outdoor entertaining, and spa-like bathrooms for ultimate relaxation, this penthouse is a haven of comfort and style. Whether you're seeking a permanent residence or a temporary retreat, this penthouse provides the epitome of urban luxury."
     },
     {
-      "id": "004",
-      "image": "https://example.com/image4.jpg",
-      "estate_title": "Tropical Paradise Villa",
+      "id": "BP001",
+      "image": "https://i.ibb.co/b2KQSmZ/One-Only-Ocean-Club-pool-big-bu.jpg",
+      "estate_title": "Beachfront Paradise",
       "segment_name": "Luxury",
-      "description": "Escape to a tropical paradise in Bora Bora. Overwater villa with private deck, crystal-clear lagoon views, and luxurious amenities.",
+      "description": "Magnificent beachfront property located on a pristine coastline. Enjoy direct access to the beach, stunning ocean views, and luxurious amenities.",
       "price": {
         "sell": 8000000,
         "rent": 30000
       },
       "status": {"sell": true, "rent": true},
       "area_sqft": 5000,
+      "location": "Malibu, California",
+      "facilities": ["Private beach access", "Infinity pool", "Outdoor living areas", "Gourmet kitchen", "Home theater"],
+      "rant_package_facilities": ["Housekeeping", "Concierge service", "Private chef"],
+      "about": "Experience the ultimate beachfront living at this magnificent property in Malibu, California. With its private beach access, infinity pool overlooking the ocean, and luxurious interiors, this property offers unparalleled relaxation and entertainment opportunities. Whether you're hosting lavish beach parties or enjoying quiet evenings by the sea, this beachfront paradise is the epitome of coastal luxury."
+    },
+    {
+      "id": "R001",
+      "image": "https://i.ibb.co/jTqQ1Ss/tropical-island-resorts-sandals-royal-caribbean.jpg",
+      "estate_title": "Tropical Oasis Resort",
+      "segment_name": "Resort",
+      "description": "Experience luxury and relaxation at our exclusive resort nestled in a tropical paradise. Enjoy world-class amenities, pristine beaches, and exceptional service.",
+      "price": {
+        "sell": 20000000,
+        "rent": 50000
+      },
+      "status": {"sell": true, "rent": true},
+      "area_sqft": 10000,
       "location": "Bora Bora, French Polynesia",
-      "facilities": ["Overwater villa", "Private deck", "Crystal-clear lagoon views", "Outdoor shower", "Gourmet dining"],
-      "rant_package_facilities": ["Housekeeping", "Personal butler", "Private chef"],
-      "about": "Experience the ultimate luxury in this tropical paradise villa in Bora Bora, French Polynesia. Perched over crystal-clear lagoons, this overwater villa offers unparalleled views and tranquility. With luxurious amenities such as a private deck and gourmet dining, indulge in a truly unforgettable escape."
+      "facilities": ["Private beach", "Infinity pool", "Spa", "Gourmet restaurants", "Water sports"],
+      "rant_package_facilities": ["Housekeeping", "Private butler", "Excursion planning"],
+      "about": "Escape to a world of luxury and tranquility at our exclusive resort in Bora Bora, French Polynesia. With its private beaches, infinity pools, and gourmet restaurants, our resort offers the ultimate tropical getaway. Whether you're seeking adventure or relaxation, our dedicated staff is here to ensure an unforgettable experience."
     },
     {
-      "id": "005",
-      "image": "https://i.ibb.co/4dtfK2K/Villa-Lewaro-Vertner-Tandy-architect-cr-Historic-New-England-David-Bohl-ed.jpg",
-      "estate_title": "Historic Estate",
-      "segment_name": "Heritage",
-      "description": "Elegant historic estate in the picturesque countryside of Tuscany. Ideal for wine enthusiasts and cultural explorers.",
+      "id": "PI001",
+      "image": "https://i.ibb.co/wY6wxf2/500016998.jpg",
+      "estate_title": "Sapphire Island Retreat",
+      "segment_name": "Exclusive",
+      "description": "Own your private island paradise with pristine beaches, turquoise waters, and lush tropical landscapes. Experience ultimate seclusion and luxury.",
       "price": {
-        "sell": 6000000,
-        "rent": 25000
+        "sell": 30000000,
+        "rent": 100000
       },
       "status": {"sell": true, "rent": true},
-      "area_sqft": 8000,
-      "location": "Tuscany, Italy",
-      "facilities": ["Vineyard views", "Private gardens", "Outdoor dining area", "Library", "Cooking classes available"],
-      "rant_package_facilities": ["Housekeeping", "Private tour guide", "Wine tasting experience"],
-      "about": "Step back in time at this elegant historic estate in Tuscany, Italy. Surrounded by vineyards and private gardens, this estate offers a glimpse into the region's rich heritage. From outdoor dining to wine tasting experiences, immerse yourself in the charm and beauty of Tuscany."
+      "area_sqft": 50000,
+      "location": "Caribbean Sea",
+      "facilities": ["Private beaches", "Luxury villas", "Helipad", "Yacht dock", "Tropical gardens"],
+      "rant_package_facilities": ["Private chef", "24/7 concierge", "Housekeeping"],
+      "about": "Indulge in the ultimate luxury of owning your private island in the Caribbean Sea. With its secluded beaches, luxurious villas, and endless amenities, this private island paradise offers the epitome of exclusivity and relaxation. Whether you're hosting extravagant events or seeking solitude, this private retreat is your own slice of paradise."
     },
     {
-      "id": "006",
-      "image": "https://i.ibb.co/PDHV0Cr/chalet-zen-cortina-dampezzo-1-1.jpg",
-      "estate_title": "Ski Chalet",
-      "segment_name": "Adventure",
-      "description": "Cozy ski chalet in the French Alps, perfect for winter getaways. Features fireplace, sauna, and easy access to world-class ski slopes.",
+      "id": "M001",
+      "image": "https://i.ibb.co/0ZmpGZM/2-14-1024x575.jpg",
+      "estate_title": "Grandeur Estate",
+      "segment_name": "Luxury",
+      "description": "Live in opulence and grandeur at our exquisite luxury mansion. Set amidst lush gardens and offering breathtaking views, this mansion is a masterpiece of elegance.",
       "price": {
-        "sell": 4000000,
-        "rent": 18000
+        "sell": 15000000,
+        "rent": 70000
       },
       "status": {"sell": true, "rent": true},
-      "area_sqft": 3500,
-      "location": "Chamonix, France",
-      "facilities": ["Fireplace", "Sauna", "Ski-in/ski-out access", "Mountain views", "Apres-ski entertainment"],
-      "rant_package_facilities": ["Housekeeping", "Ski instructor", "Equipment rental"],
-      "about": "Embrace the thrill of winter sports at this cozy ski chalet in Chamonix, France. Nestled in the French Alps, this chalet offers easy access to world-class ski slopes and breathtaking mountain views. After a day on the slopes, unwind by the fireplace or enjoy apres-ski entertainment in the comfort of your own chalet."
+      "area_sqft": 15000,
+      "location": "Los Angeles, California",
+      "facilities": ["Swimming pool", "Tennis court", "Wine cellar", "Movie theater", "Gym"],
+      "rant_package_facilities": ["Private chef", "Chauffeur service", "24/7 security"],
+      "about": "Experience the epitome of luxury living at our prestigious mansion in Los Angeles, California. With its lavish amenities, sprawling grounds, and unparalleled views, this mansion offers the ultimate in sophistication and comfort. Whether you're entertaining guests or enjoying quiet moments of relaxation, this mansion is a testament to refined living."
     }
   ]
 
-  
 
 
 
