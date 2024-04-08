@@ -76,7 +76,7 @@ const NavBar = () => {
             </ul>
           </div>
           <div className="navbar-end">
-            <a className="px-5 py-2 font-semibold bg-secondary border-secondary text-white">
+            <a className="px-5 cursor-pointer py-2 font-semibold bg-secondary border-secondary text-white">
               Login
             </a>
           </div>

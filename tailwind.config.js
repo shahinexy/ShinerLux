@@ -9,6 +9,9 @@ export default {
       colors: {
         primary: '#114232',
         secondary: '#87A922'
+      },
+      fontFamily: {
+        'roboto': '"Roboto Slab", serif'
       }
     },
   },
