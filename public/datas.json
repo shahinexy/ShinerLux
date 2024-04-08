@@ -1,0 +1,110 @@
+[
+    {
+      "id": "001",
+      "image": "https://i.ibb.co/Hn6LnCm/IMG-4422-Talaefun-Villa-Phuket-1024x682.jpg",
+      "estate_title": "Oceanfront Villa",
+      "segment_name": "Luxury",
+      "description": "Luxurious oceanfront villa with stunning views of the Pacific Ocean. Features private beach access, infinity pool, and spacious outdoor living areas.",
+      "price": {
+        "sell": 5000000,
+        "rent": 20000
+      },
+      "status": {"sell": true, "rent": true},
+      "area_sqft": 6000,
+      "location": "Maui, Hawaii",
+      "facilities": ["Private beach access", "Infinity pool", "Outdoor living areas", "Gourmet kitchen", "Home theater"],
+      "rant_package_facilities": ["Housekeeping", "Concierge service", "Airport transfer"],
+      "about": "Experience unparalleled luxury at our oceanfront villa in Maui, Hawaii. Indulge in breathtaking views of the Pacific Ocean from the comfort of your own private retreat. Whether you're lounging by the infinity pool, enjoying gourmet meals in the outdoor living areas, or relaxing on the pristine beach, this villa offers the ultimate tropical getaway."
+    },
+    {
+      "id": "002",
+      "image": "https://i.ibb.co/85dy0Tr/Bali-mountain-retreat.jpg",
+      "estate_title": "Mountain Retreat",
+      "segment_name": "Nature Retreat",
+      "description": "Secluded mountain retreat nestled in the Rockies. Perfect for nature lovers and outdoor enthusiasts. Features hot tub, fireplace, and panoramic views.",
+      "price": {
+        "sell": 3000000,
+        "rent": 15000
+      },
+      "status": {"sell": true, "rent": true},
+      "area_sqft": 4000,
+      "location": "Aspen, Colorado",
+      "facilities": ["Hot tub", "Fireplace", "Panoramic views", "Fully equipped kitchen", "Hiking trails nearby"],
+      "rant_package_facilities": ["Housekeeping", "Mountain guide", "Ski equipment rental"],
+      "about": "Escape to a secluded mountain retreat in Aspen, Colorado, where panoramic views and outdoor adventures await. This cozy villa offers the perfect blend of rustic charm and modern amenities. Whether you're soaking in the hot tub, cozying up by the fireplace, or exploring nearby hiking trails, this retreat is the ultimate nature lover's paradise."
+    },
+    {
+      "id": "003",
+      "image": "https://i.ibb.co/qszqBws/Luxury-house-design-Top-10-tips-to-add-luxury-to-your-house-FEATURE-compressed.jpg",
+      "estate_title": "Luxury Mansion",
+      "segment_name": "Luxury",
+      "description": "Exquisite luxury mansion in the heart of Beverly Hills. Designed for discerning guests seeking opulence and sophistication.",
+      "price": {
+        "sell": 10000000,
+        "rent": 35000
+      },
+      "status": {"sell": true, "rent": true},
+      "area_sqft": 10000,
+      "location": "Beverly Hills, California",
+      "facilities": ["Swimming pool", "Jacuzzi", "Fitness center", "Wine cellar", "Private chef available"],
+      "rant_package_facilities": ["Housekeeping", "Chauffeur service", "Personal chef"],
+      "about": "Indulge in luxury at this exquisite mansion in Beverly Hills, California. Boasting lavish amenities such as a swimming pool, jacuzzi, and wine cellar, this mansion offers the epitome of sophistication and comfort. Whether you're hosting lavish events or enjoying intimate gatherings, this mansion provides the perfect backdrop for unforgettable experiences."
+    },
+    {
+      "id": "004",
+      "image": "https://example.com/image4.jpg",
+      "estate_title": "Tropical Paradise Villa",
+      "segment_name": "Luxury",
+      "description": "Escape to a tropical paradise in Bora Bora. Overwater villa with private deck, crystal-clear lagoon views, and luxurious amenities.",
+      "price": {
+        "sell": 8000000,
+        "rent": 30000
+      },
+      "status": {"sell": true, "rent": true},
+      "area_sqft": 5000,
+      "location": "Bora Bora, French Polynesia",
+      "facilities": ["Overwater villa", "Private deck", "Crystal-clear lagoon views", "Outdoor shower", "Gourmet dining"],
+      "rant_package_facilities": ["Housekeeping", "Personal butler", "Private chef"],
+      "about": "Experience the ultimate luxury in this tropical paradise villa in Bora Bora, French Polynesia. Perched over crystal-clear lagoons, this overwater villa offers unparalleled views and tranquility. With luxurious amenities such as a private deck and gourmet dining, indulge in a truly unforgettable escape."
+    },
+    {
+      "id": "005",
+      "image": "https://i.ibb.co/4dtfK2K/Villa-Lewaro-Vertner-Tandy-architect-cr-Historic-New-England-David-Bohl-ed.jpg",
+      "estate_title": "Historic Estate",
+      "segment_name": "Heritage",
+      "description": "Elegant historic estate in the picturesque countryside of Tuscany. Ideal for wine enthusiasts and cultural explorers.",
+      "price": {
+        "sell": 6000000,
+        "rent": 25000
+      },
+      "status": {"sell": true, "rent": true},
+      "area_sqft": 8000,
+      "location": "Tuscany, Italy",
+      "facilities": ["Vineyard views", "Private gardens", "Outdoor dining area", "Library", "Cooking classes available"],
+      "rant_package_facilities": ["Housekeeping", "Private tour guide", "Wine tasting experience"],
+      "about": "Step back in time at this elegant historic estate in Tuscany, Italy. Surrounded by vineyards and private gardens, this estate offers a glimpse into the region's rich heritage. From outdoor dining to wine tasting experiences, immerse yourself in the charm and beauty of Tuscany."
+    },
+    {
+      "id": "006",
+      "image": "https://i.ibb.co/PDHV0Cr/chalet-zen-cortina-dampezzo-1-1.jpg",
+      "estate_title": "Ski Chalet",
+      "segment_name": "Adventure",
+      "description": "Cozy ski chalet in the French Alps, perfect for winter getaways. Features fireplace, sauna, and easy access to world-class ski slopes.",
+      "price": {
+        "sell": 4000000,
+        "rent": 18000
+      },
+      "status": {"sell": true, "rent": true},
+      "area_sqft": 3500,
+      "location": "Chamonix, France",
+      "facilities": ["Fireplace", "Sauna", "Ski-in/ski-out access", "Mountain views", "Apres-ski entertainment"],
+      "rant_package_facilities": ["Housekeeping", "Ski instructor", "Equipment rental"],
+      "about": "Embrace the thrill of winter sports at this cozy ski chalet in Chamonix, France. Nestled in the French Alps, this chalet offers easy access to world-class ski slopes and breathtaking mountain views. After a day on the slopes, unwind by the fireplace or enjoy apres-ski entertainment in the comfort of your own chalet."
+    }
+  ]
+
+  
+
+
+
+
