@@ -90,9 +90,9 @@ const NavBar = () => {
             </ul>
           </div>
           <div className="navbar-end">
-            <a className="px-5 cursor-pointer py-2 font-semibold bg-secondary border-secondary text-white">
+            <Link to={'/login'} className="px-5 cursor-pointer py-2 font-semibold bg-secondary border-secondary text-white">
               Login
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
