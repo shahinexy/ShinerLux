@@ -1,6 +1,10 @@
+import Cards from "../components/Cards";
 import Slider from "../components/Slider";
+import { useLoaderData } from 'react-router-dom';
 
 const Home = () => {
+    const datas = useLoaderData()
+    console.log(datas);
     return (
         <div>
             <Slider></Slider>
@@ -10,8 +14,10 @@ const Home = () => {
                         <h2 className="md:text-4xl text-2xl font-bold my-5">GET YOUR LUXURIOUS PROPERTES</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos voluptatem provident necessitatibus tempore voluptates laudantium earum? Pariatur, odio nostrum, cum officia beatae culpa.</p>
                     </div>
-                    <div>
-                        
+                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 md:my-12 my-5">
+                        {
+                            datas.map(data => <Cards key={data.id} data={data}></Cards>)
+                        }
                     </div>
                 </div>
             </div>

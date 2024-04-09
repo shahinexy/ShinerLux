@@ -1,109 +1,104 @@
 [
-    {
-      "id": "001",
-      "image": "https://i.ibb.co/Hn6LnCm/IMG-4422-Talaefun-Villa-Phuket-1024x682.jpg",
-      "estate_title": "Oceanfront Villa",
-      "segment_name": "Luxury",
-      "description": "Luxurious oceanfront villa with stunning views of the Pacific Ocean. Features private beach access, infinity pool, and spacious outdoor living areas.",
-      "price": {
-        "sell": 5000000,
-        "rent": 20000
-      },
-      "status": {"sell": true, "rent": true},
-      "area_sqft": 6000,
-      "location": "Maui, Hawaii",
-      "facilities": ["Private beach access", "Infinity pool", "Outdoor living areas", "Gourmet kitchen", "Home theater"],
-      "rant_package_facilities": ["Housekeeping", "Concierge service", "Airport transfer"],
-      "about": "Experience unparalleled luxury at our oceanfront villa in Maui, Hawaii. Indulge in breathtaking views of the Pacific Ocean from the comfort of your own private retreat. Whether you're lounging by the infinity pool, enjoying gourmet meals in the outdoor living areas, or relaxing on the pristine beach, this villa offers the ultimate tropical getaway."
+  {
+    "id": "001",
+    "image": "https://i.ibb.co/Hn6LnCm/IMG-4422-Talaefun-Villa-Phuket-1024x682.jpg",
+    "estate_title": "Oceanfront Villa",
+    "segment_name": "Villa",
+    "description": "Luxurious oceanfront villa with stunning views of the Pacific Ocean. Features private beach access, infinity pool, and spacious outdoor living areas.",
+    "price": {
+      "sell": 5000000,
+      "rent": 20000
     },
-    {
-      "id": "PH001",
-      "image": "https://i.ibb.co/mN2xb9P/Get-Media-2020-10-20-T161504-719.jpg",
-      "estate_title": "Luxury Penthouse",
-      "segment_name": "Luxury",
-      "description": "Exquisite luxury penthouse located in the heart of Manhattan. Boasting panoramic views of the city skyline, this penthouse offers unparalleled elegance and sophistication.",
-      "price": {
-        "sell": 10000000,
-        "rent": 35000
-      },
-      "status": {"sell": true, "rent": true},
-      "area_sqft": 3000,
-      "location": "Manhattan, New York",
-      "facilities": ["Floor-to-ceiling windows", "Private terrace", "High-end appliances", "Spa-like bathrooms", "24-hour concierge"],
-      "rant_package_facilities": ["Housekeeping", "Personal chef", "Chauffeur service"],
-      "about": "Indulge in luxury living at this stunning penthouse in the heart of Manhattan, New York. With floor-to-ceiling windows offering breathtaking views of the city, a private terrace for outdoor entertaining, and spa-like bathrooms for ultimate relaxation, this penthouse is a haven of comfort and style. Whether you're seeking a permanent residence or a temporary retreat, this penthouse provides the epitome of urban luxury."
+    "status": {"sell": true, "rent": true},
+    "area_sqft": 6000,
+    "location": "Maui, Hawaii",
+    "facilities": ["Private beach access", "Infinity pool", "Outdoor living areas", "Gourmet kitchen", "Home theater"],
+    "rant_package_facilities": ["Housekeeping", "Concierge service", "Airport transfer"],
+    "about": "Experience unparalleled luxury at our oceanfront villa in Maui, Hawaii. Indulge in breathtaking views of the Pacific Ocean from the comfort of your own private retreat. Whether you're lounging by the infinity pool, enjoying gourmet meals in the outdoor living areas, or relaxing on the pristine beach, this villa offers the ultimate tropical getaway."
+  },
+  {
+    "id": "PH001",
+    "image": "https://i.ibb.co/mN2xb9P/Get-Media-2020-10-20-T161504-719.jpg",
+    "estate_title": "Luxury Penthouse",
+    "segment_name": "City Penthouse",
+    "description": "Exquisite luxury penthouse located in the heart of Manhattan. Boasting panoramic views of the city skyline, this penthouse offers unparalleled elegance and sophistication.",
+    "price": {
+      "sell": 10000000,
+      "rent": 35000
     },
-    {
-      "id": "BP001",
-      "image": "https://i.ibb.co/b2KQSmZ/One-Only-Ocean-Club-pool-big-bu.jpg",
-      "estate_title": "Beachfront Paradise",
-      "segment_name": "Luxury",
-      "description": "Magnificent beachfront property located on a pristine coastline. Enjoy direct access to the beach, stunning ocean views, and luxurious amenities.",
-      "price": {
-        "sell": 8000000,
-        "rent": 30000
-      },
-      "status": {"sell": true, "rent": true},
-      "area_sqft": 5000,
-      "location": "Malibu, California",
-      "facilities": ["Private beach access", "Infinity pool", "Outdoor living areas", "Gourmet kitchen", "Home theater"],
-      "rant_package_facilities": ["Housekeeping", "Concierge service", "Private chef"],
-      "about": "Experience the ultimate beachfront living at this magnificent property in Malibu, California. With its private beach access, infinity pool overlooking the ocean, and luxurious interiors, this property offers unparalleled relaxation and entertainment opportunities. Whether you're hosting lavish beach parties or enjoying quiet evenings by the sea, this beachfront paradise is the epitome of coastal luxury."
+    "status": {"sell": true, "rent": true},
+    "area_sqft": 3000,
+    "location": "Manhattan, New York",
+    "facilities": ["Floor-to-ceiling windows", "Private terrace", "High-end appliances", "Spa-like bathrooms", "24-hour concierge"],
+    "rant_package_facilities": ["Housekeeping", "Personal chef", "Chauffeur service"],
+    "about": "Indulge in luxury living at this stunning penthouse in the heart of Manhattan, New York. With floor-to-ceiling windows offering breathtaking views of the city, a private terrace for outdoor entertaining, and spa-like bathrooms for ultimate relaxation, this penthouse is a haven of comfort and style. Whether you're seeking a permanent residence or a temporary retreat, this penthouse provides the epitome of urban luxury."
+  },
+  {
+    "id": "BP001",
+    "image": "https://i.ibb.co/b2KQSmZ/One-Only-Ocean-Club-pool-big-bu.jpg",
+    "estate_title": "Beachfront Paradise",
+    "segment_name": "Beachfront Property",
+    "description": "Magnificent beachfront property located on a pristine coastline. Enjoy direct access to the beach, stunning ocean views, and luxurious amenities.",
+    "price": {
+      "sell": 8000000,
+      "rent": 30000
     },
-    {
-      "id": "R001",
-      "image": "https://i.ibb.co/jTqQ1Ss/tropical-island-resorts-sandals-royal-caribbean.jpg",
-      "estate_title": "Tropical Oasis Resort",
-      "segment_name": "Resort",
-      "description": "Experience luxury and relaxation at our exclusive resort nestled in a tropical paradise. Enjoy world-class amenities, pristine beaches, and exceptional service.",
-      "price": {
-        "sell": 20000000,
-        "rent": 50000
-      },
-      "status": {"sell": true, "rent": true},
-      "area_sqft": 10000,
-      "location": "Bora Bora, French Polynesia",
-      "facilities": ["Private beach", "Infinity pool", "Spa", "Gourmet restaurants", "Water sports"],
-      "rant_package_facilities": ["Housekeeping", "Private butler", "Excursion planning"],
-      "about": "Escape to a world of luxury and tranquility at our exclusive resort in Bora Bora, French Polynesia. With its private beaches, infinity pools, and gourmet restaurants, our resort offers the ultimate tropical getaway. Whether you're seeking adventure or relaxation, our dedicated staff is here to ensure an unforgettable experience."
+    "status": {"sell": true, "rent": true},
+    "area_sqft": 5000,
+    "location": "Malibu, California",
+    "facilities": ["Private beach access", "Infinity pool", "Outdoor living areas", "Gourmet kitchen", "Home theater"],
+    "rant_package_facilities": ["Housekeeping", "Concierge service", "Private chef"],
+    "about": "Experience the ultimate beachfront living at this magnificent property in Malibu, California. With its private beach access, infinity pool overlooking the ocean, and luxurious interiors, this property offers unparalleled relaxation and entertainment opportunities. Whether you're hosting lavish beach parties or enjoying quiet evenings by the sea, this beachfront paradise is the epitome of coastal luxury."
+  },
+  {
+    "id": "R001",
+    "image": "https://i.ibb.co/jTqQ1Ss/tropical-island-resorts-sandals-royal-caribbean.jpg",
+    "estate_title": "Tropical Oasis Resort",
+    "segment_name": "Resort",
+    "description": "Experience luxury and relaxation at our exclusive resort nestled in a tropical paradise. Enjoy world-class amenities, pristine beaches, and exceptional service.",
+    "price": {
+      "sell": 20000000,
+      "rent": 50000
     },
-    {
-      "id": "PI001",
-      "image": "https://i.ibb.co/wY6wxf2/500016998.jpg",
-      "estate_title": "Sapphire Island Retreat",
-      "segment_name": "Exclusive",
-      "description": "Own your private island paradise with pristine beaches, turquoise waters, and lush tropical landscapes. Experience ultimate seclusion and luxury.",
-      "price": {
-        "sell": 30000000,
-        "rent": 100000
-      },
-      "status": {"sell": true, "rent": true},
-      "area_sqft": 50000,
-      "location": "Caribbean Sea",
-      "facilities": ["Private beaches", "Luxury villas", "Helipad", "Yacht dock", "Tropical gardens"],
-      "rant_package_facilities": ["Private chef", "24/7 concierge", "Housekeeping"],
-      "about": "Indulge in the ultimate luxury of owning your private island in the Caribbean Sea. With its secluded beaches, luxurious villas, and endless amenities, this private island paradise offers the epitome of exclusivity and relaxation. Whether you're hosting extravagant events or seeking solitude, this private retreat is your own slice of paradise."
+    "status": {"sell": true, "rent": true},
+    "area_sqft": 10000,
+    "location": "Bora Bora, French Polynesia",
+    "facilities": ["Private beach", "Infinity pool", "Spa", "Gourmet restaurants", "Water sports"],
+    "rant_package_facilities": ["Housekeeping", "Private butler", "Excursion planning"],
+    "about": "Escape to a world of luxury and tranquility at our exclusive resort in Bora Bora, French Polynesia. With its private beaches, infinity pools, and gourmet restaurants, our resort offers the ultimate tropical getaway. Whether you're seeking adventure or relaxation, our dedicated staff is here to ensure an unforgettable experience."
+  },
+  {
+    "id": "PI001",
+    "image": "https://i.ibb.co/wY6wxf2/500016998.jpg",
+    "estate_title": "Sapphire Island Retreat",
+    "segment_name": "Private Island",
+    "description": "Own your private island paradise with pristine beaches, turquoise waters, and lush tropical landscapes. Experience ultimate seclusion and luxury.",
+    "price": {
+      "sell": 30000000,
+      "rent": 100000
     },
-    {
-      "id": "M001",
-      "image": "https://i.ibb.co/0ZmpGZM/2-14-1024x575.jpg",
-      "estate_title": "Grandeur Estate",
-      "segment_name": "Luxury",
-      "description": "Live in opulence and grandeur at our exquisite luxury mansion. Set amidst lush gardens and offering breathtaking views, this mansion is a masterpiece of elegance.",
-      "price": {
-        "sell": 15000000,
-        "rent": 70000
-      },
-      "status": {"sell": true, "rent": true},
-      "area_sqft": 15000,
-      "location": "Los Angeles, California",
-      "facilities": ["Swimming pool", "Tennis court", "Wine cellar", "Movie theater", "Gym"],
-      "rant_package_facilities": ["Private chef", "Chauffeur service", "24/7 security"],
-      "about": "Experience the epitome of luxury living at our prestigious mansion in Los Angeles, California. With its lavish amenities, sprawling grounds, and unparalleled views, this mansion offers the ultimate in sophistication and comfort. Whether you're entertaining guests or enjoying quiet moments of relaxation, this mansion is a testament to refined living."
-    }
-  ]
-
-
-
-
-
+    "status": {"sell": true, "rent": true},
+    "area_sqft": 50000,
+    "location": "Caribbean Sea",
+    "facilities": ["Private beaches", "Luxury villas", "Helipad", "Yacht dock", "Tropical gardens"],
+    "rant_package_facilities": ["Private chef", "24/7 concierge", "Housekeeping"],
+    "about": "Indulge in the ultimate luxury of owning your private island in the Caribbean Sea. With its secluded beaches, luxurious villas, and endless amenities, this private island paradise offers the epitome of exclusivity and relaxation. Whether you're hosting extravagant events or seeking solitude, this private retreat is your own slice of paradise."
+  },
+  {
+    "id": "M001",
+    "image": "https://i.ibb.co/VVfmFvT/574bc9b2-d0e0-43e3-aa71-33287a758b15-f932a3fb-4621-4e69-967c-10151ecf7b28-la-mega-mansion-undergroun.jpg",
+    "estate_title": "Grandeur Estate",
+    "segment_name": "Luxury Mansion",
+    "description": "Live in opulence and grandeur at our exquisite luxury mansion. Set amidst lush gardens and offering breathtaking views, this mansion is a masterpiece of elegance.",
+    "price": {
+      "sell": 15000000,
+      "rent": 70000
+    },
+    "status": {"sell": true, "rent": true},
+    "area_sqft": 15000,
+    "location": "Los Angeles, California",
+    "facilities": ["Swimming pool", "Tennis court", "Wine cellar", "Movie theater", "Gym"],
+    "rant_package_facilities": ["Private chef", "Chauffeur service", "24/7 security"],
+    "about": "Experience the epitome of luxury living at our prestigious mansion in Los Angeles, California. With its lavish amenities, sprawling grounds, and unparalleled views, this mansion offers the ultimate in sophistication and comfort. Whether you're entertaining guests or enjoying quiet moments of relaxation, this mansion is a testament to refined living."
+  }
+]
