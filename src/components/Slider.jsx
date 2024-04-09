@@ -27,15 +27,15 @@ const Slider = () => {
           modules={[ Navigation, Autoplay]}
           className="mySwiper"
         >
-          <SwiperSlide><img className="w-full h-[90vh]" src={slid5} alt="" /></SwiperSlide>
-          <SwiperSlide><img className="w-full h-[90vh]" src={slid3} alt="" /></SwiperSlide>
-          <SwiperSlide><img className="w-full h-[90vh]" src={slid4} alt="" /></SwiperSlide>
-          <SwiperSlide><img className="w-full h-[90vh]" src={slid2} alt="" /></SwiperSlide>
-          <SwiperSlide><img className="w-full h-[90vh]" src={slid1} alt="" /></SwiperSlide>
+          <SwiperSlide><img className="w-full md:h-[90vh] h-[50vh]" src={slid5} alt="" /></SwiperSlide>
+          <SwiperSlide><img className="w-full md:h-[90vh] h-[50vh]" src={slid3} alt="" /></SwiperSlide>
+          <SwiperSlide><img className="w-full md:h-[90vh] h-[50vh]" src={slid4} alt="" /></SwiperSlide>
+          <SwiperSlide><img className="w-full md:h-[90vh] h-[50vh]" src={slid2} alt="" /></SwiperSlide>
+          <SwiperSlide><img className="w-full md:h-[90vh] h-[50vh]" src={slid1} alt="" /></SwiperSlide>
         </Swiper>
-        <div className="absolute bottom-0 text-white py-6 bg-black/50 w-full z-30 flex justify-center flex-col items-center space-y-5">
-            <h1 className="md:text-4xl text-xl font-bold text-center">Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
-            <button className="btn bg-secondary border-secondary text-white md:text-lg font-bold w-40 rounded-none hover:bg-primary">Get In Touch</button>
+        <div className="absolute bottom-0 text-white md:py-6 py-1 bg-black/50 w-full z-30 flex justify-center flex-col items-center md:space-y-5 space-y-2">
+            <h1 className="md:text-4xl text-lg md:font-bold font-medium text-center">GET THE BEST DEAL!</h1>
+            <button className="btn md:btn-md btn-sm bg-secondary md:py-0 border-secondary text-white md:text-lg md:font-bold rounded-none hover:bg-primary">Get In Touch</button>
         </div>
       </div>
     </div>

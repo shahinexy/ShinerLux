@@ -49,33 +49,45 @@ const SingleCard = () => {
               <h2 className="text-center text-xl font-bold bg-secondary py-3 text-primary">
                 Fore Sell
               </h2>
-              <div className="p-3 space-y-3">
-                <p className="font-semibold">Facilities</p>
-                <ul className="list-disc pl-8">
-                  {facilities.map((data, idx) => (
-                    <li key={idx}>{data}</li>
-                  ))}
-                </ul>
-                <p className="font-bold text-primary text-lg">
-                  Price: {price.sell}$
-                </p>
-              </div>
+              {status.sell ? (
+                <div className="p-3 space-y-3">
+                  <p className="font-semibold">Facilities</p>
+                  <ul className="list-disc pl-8">
+                    {facilities.map((data, idx) => (
+                      <li key={idx}>{data}</li>
+                    ))}
+                  </ul>
+                  <p className="font-bold text-primary text-lg">
+                    Price: {price.sell}$
+                  </p>
+                </div>
+              ) : (
+                <h3 className="text-xl text-center text-primary font-semibold my-5">
+                  This property not for Sell
+                </h3>
+              )}
             </div>
             <div>
               <h2 className="text-center text-xl font-bold bg-primary py-3 text-white">
                 Fore Rent
               </h2>
-              <div className="p-3 space-y-3">
-                <p className="font-semibold">Facilities</p>
-                <ul className="list-disc pl-8">
-                  {rant_package_facilities.map((data, idx) => (
-                    <li key={idx}>{data}</li>
-                  ))}
-                </ul>
-                <p className="font-bold text-secondary text-lg">
-                  Price: {price.rent}$
-                </p>
-              </div>
+              {status.rent ? (
+                <div className="p-3 space-y-3">
+                  <p className="font-semibold">Facilities</p>
+                  <ul className="list-disc pl-8">
+                    {rant_package_facilities.map((data, idx) => (
+                      <li key={idx}>{data}</li>
+                    ))}
+                  </ul>
+                  <p className="font-bold text-secondary text-lg">
+                    Price: {price.rent}$
+                  </p>
+                </div>
+              ) : (
+                <h3 className="text-xl text-center text-secondary font-semibold my-5">
+                  This property not for Rent
+                </h3>
+              )}
             </div>
           </div>
           <div>
