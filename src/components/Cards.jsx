@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types'; 
 import { FaMapMarkerAlt } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Cards = ({data}) => {
-    const {image, estate_title, segment_name, price, description, status, location} = data;
+    const {id, image, estate_title, segment_name, price, description, status, location} = data;
     return (
         <div>
             <div className="bg-primary text-white shadow-md shadow-black">
@@ -21,7 +22,9 @@ const Cards = ({data}) => {
                 </div>
                 <p className="border-b border-secondary pb-4">{description}</p>
                 <div className='flex md:flex-row flex-col-reverse justify-between md:items-center flex-wrap'>
+                <Link to={`/singleCard/${id}`}>
                 <button className="btn bg-secondary border-primary hover:bg-primary text-primary hover:text-white font-semibold rounded-none">View Details</button>
+                </Link>
                 <p className='flex gap-1 items-center md:my-0 my-3'><FaMapMarkerAlt></FaMapMarkerAlt> {location}</p>
                 </div>
                 </div>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Login = () => {
     return (
         <div>
-            <div className="w-1/3 text-white p-8 bg-primary mx-auto my-20">
+            <div className="md:w-1/3 text-white p-8 bg-primary mx-auto md:my-20 my-6">
             <h1 className="text-3xl font-semibold text-center mb-8">Login Now</h1>
                 <form className="space-y-3">
                 <div>

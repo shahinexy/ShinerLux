@@ -5,6 +5,7 @@ import UpdateProfile from "../Pages/UpdateProfile";
 import UserProfile from "../Pages/UserProfile";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
+import SingleCard from "../components/SingleCard";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
         {
             path: '/',
             element: <Home></Home>,
-            loader: ()=> fetch('datas.json')
+            loader: ()=> fetch('/datas.json')
         },
         {
             path: '/updateProfile',
@@ -23,6 +24,11 @@ const router = createBrowserRouter([
         {
           path: '/userProfile',
           element: <UserProfile></UserProfile>
+        },
+        {
+          path: '/singleCard/:id',
+          element: <SingleCard></SingleCard>,
+          loader: () => fetch('/datas.json')
         },
         {
           path: '/login',

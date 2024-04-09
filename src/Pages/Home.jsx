@@ -4,7 +4,6 @@ import { useLoaderData } from 'react-router-dom';
 
 const Home = () => {
     const datas = useLoaderData()
-    console.log(datas);
     return (
         <div>
             <Slider></Slider>
