@@ -8,7 +8,7 @@ const NavBar = () => {
           to={"/"}
           className={({ isActive, isPending }) =>
             isPending
-              ? "pending" 
+              ? "pending"
               : isActive
               ? "bg-secondary rounded-none border border-secondary"
               : "text-white"
@@ -29,6 +29,20 @@ const NavBar = () => {
           }
         >
           Update Profile
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to={"/userProfile"}
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "text-white"
+              : isActive
+              ? "bg-secondary rounded-none border border-secondary"
+              : "text-white"
+          }
+        >
+          User Profile
         </NavLink>
       </li>
     </>

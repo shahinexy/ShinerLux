@@ -20,9 +20,9 @@ const Cards = ({data}) => {
                     <small className="bg-secondary px-2 text-primary font-bold">{segment_name}</small>
                 </div>
                 <p className="border-b border-secondary pb-4">{description}</p>
-                <div className='flex justify-between items-center'>
-                <button className="btn bg-secondary border-primary hover:bg-primary text-black hover:text-white font-semibold rounded-none">View Details</button>
-                <p className='flex gap-3 items-center'><FaMapMarkerAlt></FaMapMarkerAlt> {location}</p>
+                <div className='flex md:flex-row flex-col-reverse justify-between md:items-center flex-wrap'>
+                <button className="btn bg-secondary border-primary hover:bg-primary text-primary hover:text-white font-semibold rounded-none">View Details</button>
+                <p className='flex gap-1 items-center md:my-0 my-3'><FaMapMarkerAlt></FaMapMarkerAlt> {location}</p>
                 </div>
                 </div>
             </div>
