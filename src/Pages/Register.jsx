@@ -4,11 +4,12 @@ const Register = () => {
   return (
     <div>
       <div className="w-1/3 text-white p-8 bg-primary mx-auto my-20">
+        <h1 className="text-3xl font-semibold text-center mb-8">Register Now</h1>
         <form className="space-y-3">
           <div>
             <p>Name</p>
             <input
-              className="mt-2 px-3 py-1 w-full text-black"
+              className="mt-2 px-3 py-2 w-full text-black"
               type="text"
               name=""
               placeholder="name"
@@ -17,7 +18,7 @@ const Register = () => {
           <div>
             <p>Email</p>
             <input
-              className="mt-2 px-3 py-1 w-full text-black"
+              className="mt-2 px-3 py-2 w-full text-black"
               type="email"
               name=""
               placeholder="email"
