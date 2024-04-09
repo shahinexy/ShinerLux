@@ -23,14 +23,12 @@
     "segment_name": "City Penthouse",
     "description": "Exquisite luxury penthouse located in the heart of Manhattan. Boasting panoramic views of the city skyline, this penthouse offers unparalleled elegance and sophistication.",
     "price": {
-      "sell": 10000000,
-      "rent": 35000
+      "sell": 10000000
     },
-    "status": {"sell": true, "rent": true},
+    "status": {"sell": true, "rent": false},
     "area_sqft": 3000,
     "location": "Manhattan, New York",
     "facilities": ["Floor-to-ceiling windows", "Private terrace", "High-end appliances", "Spa-like bathrooms", "24-hour concierge"],
-    "rant_package_facilities": ["Housekeeping", "Personal chef", "Chauffeur service"],
     "about": "Indulge in luxury living at this stunning penthouse in the heart of Manhattan, New York. With floor-to-ceiling windows offering breathtaking views of the city, a private terrace for outdoor entertaining, and spa-like bathrooms for ultimate relaxation, this penthouse is a haven of comfort and style. Whether you're seeking a permanent residence or a temporary retreat, this penthouse provides the epitome of urban luxury."
   },
   {
@@ -57,10 +55,9 @@
     "segment_name": "Resort",
     "description": "Experience luxury and relaxation at our exclusive resort nestled in a tropical paradise. Enjoy world-class amenities, pristine beaches, and exceptional service.",
     "price": {
-      "sell": 20000000,
       "rent": 50000
     },
-    "status": {"sell": true, "rent": true},
+    "status": {"sell": false, "rent": true},
     "area_sqft": 10000,
     "location": "Bora Bora, French Polynesia",
     "facilities": ["Private beach", "Infinity pool", "Spa", "Gourmet restaurants", "Water sports"],
