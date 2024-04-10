@@ -7,6 +7,7 @@ import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import SingleCard from "../components/SingleCard";
 import ErrorPage from "../Pages/ErrorPage";
+import PrivetRout from "../PrivetRout/PrivetRout";
 
 const router = createBrowserRouter([
   {
@@ -14,33 +15,37 @@ const router = createBrowserRouter([
     element: <Root></Root>,
     errorElement: <ErrorPage></ErrorPage>,
     children: [
-        {
-            path: '/',
-            element: <Home></Home>,            
-            loader: ()=> fetch('/datas.json')
-        },
-        {
-            path: '/updateProfile',
-            element: <UpdateProfile></UpdateProfile>
-        },
-        {
-          path: '/userProfile',
-          element: <UserProfile></UserProfile>
-        },
-        {
-          path: '/singleCard/:id',
-          element: <SingleCard></SingleCard>,
-          loader: () => fetch('/datas.json')
-        },
-        {
-          path: '/login',
-          element: <Login></Login>
-        },
-        {
-          path: '/register',
-          element: <Register></Register>
-        }
-    ]
+      {
+        path: "/",
+        element: <Home></Home>,
+        loader: () => fetch("/datas.json"),
+      },
+      {
+        path: "/updateProfile",
+        element: (
+          <PrivetRout>
+            <UpdateProfile></UpdateProfile>
+          </PrivetRout>
+        ),
+      },
+      {
+        path: "/userProfile",
+        element: <UserProfile></UserProfile>,
+      },
+      {
+        path: "/singleCard/:id",
+        element: <SingleCard></SingleCard>,
+        loader: () => fetch("/datas.json"),
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
+      },
+    ],
   },
 ]);
 
