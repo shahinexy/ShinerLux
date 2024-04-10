@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import toast, { Toaster } from "react-hot-toast";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { authContext } from "../AuthProvider/AuthProvider";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Register = () => {
-  const {createUser} = useContext(authContext)
+  const { createUser } = useContext(authContext);
+  const [showHide, setShowHide] = useState(true);
+  const [passType, setPassType] = useState(true);
 
   const {
     register,
@@ -16,23 +19,28 @@ const Register = () => {
 
   // handle submition
   const onSubmit = (data) => {
-    const password = data.pass
-    if(!/^(?=.*[a-z])(?=.*[A-Z]).{6,}$/.test(password)){
-       toast.error('Password requires 1 lowercase, 1 uppercase, and min 6 characters.')
-       return
-    }
-    else{
+    const password = data.pass;
+    if (!/^(?=.*[a-z])(?=.*[A-Z]).{6,}$/.test(password)) {
+      toast.error(
+        "Password requires 1 lowercase, 1 uppercase, and min 6 characters."
+      );
+      return;
+    } else {
       createUser(data.email, data.pass)
-      .then(result=> {
-        console.log(result)
-        toast.success('Registation Success')
-      })
-      .catch(error => {
-        console.log(error)
-        toast.error(error.message.split('/')[1].replaceAll(')', ''))
-      })
+        .then((result) => {
+          console.log(result);
+          toast.success("Registation Success");
+        })
+        .catch((error) => {
+          console.log(error);
+          toast.error(error.message.split("/")[1].replaceAll(")", ""));
+        });
     }
+  };
 
+  const handleShowHide = () => {
+    setShowHide(!showHide);
+    setPassType(!passType);
   };
 
   return (
@@ -73,25 +81,28 @@ const Register = () => {
               required
             />
           </div>
-          <div>
+          <div className="relative">
             <p>Password</p>
             <input
               {...register("pass")}
               className="mt-2 px-3 py-2 w-full text-black"
-              type="password"
+              type={passType ? "password" : "text"}
               name="pass"
               placeholder="password"
               required
             />
-          </div>
-          {
-            errors.pass && <small className="text-red-500">{errors.pass.message}</small>
-          }
-          <div className="pt-5">
-            <button
-              // onClick={handleError}
-              className="btn bg-secondary border-primary hover:bg-primary text-primary hover:text-white font-semibold rounded-none px-8 text-xl"
+            <span
+              onClick={handleShowHide}
+              className="absolute bottom-3 right-2 text-primary cursor-pointer"
             >
+              {showHide ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}
+            </span>
+          </div>
+          {errors.pass && (
+            <small className="text-red-500">{errors.pass.message}</small>
+          )}
+          <div className="pt-5">
+            <button className="btn bg-secondary border-primary hover:bg-primary text-primary hover:text-white font-semibold rounded-none px-8 text-xl">
               Register
             </button>
           </div>
