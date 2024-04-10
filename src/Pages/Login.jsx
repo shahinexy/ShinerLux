@@ -9,7 +9,7 @@ const Login = () => {
   const [showHide, setShowHide] = useState(true);
   const [passType, setPassType] = useState(true);
 
-  const {user, signInUser} = useContext(authContext)
+  const {user, signInUser, googleSignIn} = useContext(authContext)
   console.log(user);
 
   const {
@@ -37,6 +37,13 @@ const Login = () => {
     setShowHide(!showHide);
     setPassType(!passType);
   };
+
+  // handle google sign in
+  const handleGoogleSignIn = ()=>{
+    googleSignIn()
+    .then()
+    .cathch()
+  }
 
   return (
     <div>
@@ -82,7 +89,7 @@ const Login = () => {
           </p>
         </form>
         <div className="flex justify-between md:gap-5 gap-1 mt-5 flex-wrap">
-          <button className="btn flex-1 bg-primary text-white rounded-none md:text-lg font-light hover:text-primary">
+          <button onClick={handleGoogleSignIn} className="btn flex-1 bg-primary text-white rounded-none md:text-lg font-light hover:text-primary">
             <FaGoogle></FaGoogle> Google Login
           </button>
           <button className="btn flex-1 bg-primary text-white rounded-none md:text-lg font-light hover:text-primary">
