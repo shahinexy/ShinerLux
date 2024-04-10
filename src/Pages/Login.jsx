@@ -9,7 +9,7 @@ const Login = () => {
   const [showHide, setShowHide] = useState(true);
   const [passType, setPassType] = useState(true);
 
-  const {user, signInUser, googleSignIn} = useContext(authContext)
+  const {user, signInUser, googleSignIn, gihubSignIn} = useContext(authContext)
   console.log(user);
 
   const {
@@ -43,6 +43,13 @@ const Login = () => {
     googleSignIn()
     .then()
     .cathch()
+  }
+
+  // handle github sign in 
+  const handleGithubSignIn = () =>{
+    gihubSignIn()
+    .then()
+    .catch()
   }
 
   return (
@@ -92,7 +99,7 @@ const Login = () => {
           <button onClick={handleGoogleSignIn} className="btn flex-1 bg-primary text-white rounded-none md:text-lg font-light hover:text-primary">
             <FaGoogle></FaGoogle> Google Login
           </button>
-          <button className="btn flex-1 bg-primary text-white rounded-none md:text-lg font-light hover:text-primary">
+          <button onClick={handleGithubSignIn} className="btn flex-1 bg-primary text-white rounded-none md:text-lg font-light hover:text-primary">
             <FaGithub></FaGithub> Github Login
           </button>
         </div>

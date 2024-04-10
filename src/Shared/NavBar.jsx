@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { authContext } from "../AuthProvider/AuthProvider";
+import { FaUserCircle } from "react-icons/fa";
 
 const NavBar = () => {
   const { user, LogOutUser } = useContext(authContext);
@@ -92,11 +93,19 @@ const NavBar = () => {
               {navLinks}
             </ul>
           </div>
-          <div className="navbar-end">
+          <div className="navbar-end space-x-4">
             {user ? (
+              <>
+              <div className="relative ">
+              <div className=" absolute right-0 h-full w-10 opacity-0 hover:w-52  hover:opacity-100 duration-300">
+                <p className=" pr-14 text-end pt-2">{user?.displayName}</p>
+              </div>
+              {user.photoURL ? <><img className="w-10 rounded-full" src={user.photoURL} alt="" /></> : <FaUserCircle className="text-4xl" />}
+              </div>
               <button onClick={()=> LogOutUser()} className="px-5 cursor-pointer py-2 font-semibold bg-secondary border border-secondary text-white hover:bg-primary hover:border-white">
                 Log Out
               </button>
+              </>
             ) : (
               <Link
                 to={"/login"}
