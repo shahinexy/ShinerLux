@@ -13,7 +13,6 @@ const Register = () => {
   const {
     register,
     handleSubmit,
-    // watch,
     formState: { errors },
   } = useForm();
 
@@ -38,6 +37,7 @@ const Register = () => {
     }
   };
 
+  //handle show hide icon
   const handleShowHide = () => {
     setShowHide(!showHide);
     setPassType(!passType);
@@ -45,7 +45,7 @@ const Register = () => {
 
   return (
     <div>
-      <div className="md:w-1/3 text-white p-8 bg-primary mx-auto md:my-20 my-6">
+      <div className="xl:w-1/3 md:w-2/3 text-white p-8 bg-primary mx-auto md:my-20 my-6">
         <h1 className="text-3xl font-semibold text-center mb-8">
           Register Now
         </h1>
@@ -93,7 +93,7 @@ const Register = () => {
             />
             <span
               onClick={handleShowHide}
-              className="absolute bottom-3 right-2 text-primary cursor-pointer"
+              className="absolute bottom-0 right-0 text-primary cursor-pointer p-3"
             >
               {showHide ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}
             </span>
