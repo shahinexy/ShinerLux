@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Cards from "../components/Cards";
 import Slider from "../components/Slider";
 import { useLoaderData } from 'react-router-dom';
@@ -6,6 +7,9 @@ const Home = () => {
     const datas = useLoaderData()
     return (
         <div>
+            <Helmet>
+                <title>ShinerLux | Home</title>
+            </Helmet>
             <Slider></Slider>
             <div className="max-w-7xl mx-auto p-5">
                 <div className="md:my-8 my-5">

@@ -4,6 +4,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { useContext, useState } from "react";
 import { authContext } from "../AuthProvider/AuthProvider";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
   const { createUser } = useContext(authContext);
@@ -45,6 +46,9 @@ const Register = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Register</title>
+      </Helmet>
       <div className="xl:w-1/3 md:w-2/3 text-white p-8 bg-primary mx-auto md:my-20 my-6">
         <h1 className="text-3xl font-semibold text-center mb-8">
           Register Now

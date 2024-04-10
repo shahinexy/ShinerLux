@@ -97,7 +97,7 @@ const NavBar = () => {
             {user ? (
               <>
               <div className="relative ">
-              <div className=" absolute right-0 h-full w-10 opacity-0 hover:w-52  hover:opacity-100 duration-300">
+              <div className=" absolute right-0 h-full w-10 opacity-0 hover:w-52  hover:opacity-100 duration-300 transition-all">
                 <p className=" pr-14 text-end pt-2">{user?.displayName}</p>
               </div>
               {user.photoURL ? <><img className="w-10 rounded-full" src={user.photoURL} alt="" /></> : <FaUserCircle className="text-4xl" />}

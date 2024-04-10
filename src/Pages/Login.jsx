@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { authContext } from "../AuthProvider/AuthProvider";
 import { toast, Toaster } from 'react-hot-toast';
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
   const [showHide, setShowHide] = useState(true);
@@ -54,6 +55,9 @@ const Login = () => {
 
   return (
     <div>
+        <Helmet>
+            <title>Login</title>
+        </Helmet>
       <div className="xl:w-1/3 md:w-2/3 text-white p-8 bg-primary mx-auto md:my-20 my-6">
         <h1 className="text-3xl font-semibold text-center mb-8">Login Now</h1>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-3">

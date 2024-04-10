@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import error from "../assets/images/png-clipart-logo-brand-green-energy-error-404-text-logo.png";
+import { Helmet } from "react-helmet-async";
 const ErrorPage = () => {
   return (
     <div>
+      <Helmet>
+        <title>404Page</title>
+      </Helmet>
       <div className="flex flex-col gap-3 justify-center items-center h-screen">
         <img className="w-56" src={error} alt="" />
         <p className="text-3xl font-bold text-primary">Page Not Found!!</p>
