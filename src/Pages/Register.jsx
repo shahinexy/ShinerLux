@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import toast, { Toaster } from "react-hot-toast";
+import { useContext } from "react";
+import { authContext } from "../AuthProvider/AuthProvider";
 
 const Register = () => {
+  const {createUser} = useContext(authContext)
+
   const {
     register,
     handleSubmit,
@@ -10,21 +14,26 @@ const Register = () => {
     formState: { errors },
   } = useForm();
 
-  // handle error
-  const handleError = () => {
-    if (errors.pass) {
-      toast.error(errors.pass.message);
-    }
-  };
-
   // handle submition
   const onSubmit = (data) => {
-    console.log(data);
-    if(data){
-      toast.success('Registation Success')
+    const password = data.pass
+    if(!/^(?=.*[a-z])(?=.*[A-Z]).{6,}$/.test(password)){
+       toast.error('Password requires 1 lowercase, 1 uppercase, and min 6 characters.')
+       return
     }
-  };
+    else{
+      createUser(data.email, data.pass)
+      .then(result=> {
+        console.log(result)
+        toast.success('Registation Success')
+      })
+      .catch(error => {
+        console.log(error)
+        toast.error(error.message.split('/')[1].replaceAll(')', ''))
+      })
+    }
 
+  };
 
   return (
     <div>
@@ -56,35 +65,31 @@ const Register = () => {
           <div>
             <p>Email</p>
             <input
-              {...register("email", {
-                required: true
-              })}
+              {...register("email")}
               className="mt-2 px-3 py-2 w-full text-black"
               type="email"
               name="email"
               placeholder="email"
+              required
             />
           </div>
           <div>
             <p>Password</p>
             <input
-              {...register("pass", {
-                required: true,
-                pattern: {
-                  value: /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/,
-                  message:
-                    "Password requires 1 lowercase, 1 uppercase, and min 6 characters.",
-                },
-              })}
+              {...register("pass")}
               className="mt-2 px-3 py-2 w-full text-black"
               type="password"
               name="pass"
               placeholder="password"
+              required
             />
           </div>
+          {
+            errors.pass && <small className="text-red-500">{errors.pass.message}</small>
+          }
           <div className="pt-5">
             <button
-              onClick={handleError}
+              // onClick={handleError}
               className="btn bg-secondary border-primary hover:bg-primary text-primary hover:text-white font-semibold rounded-none px-8 text-xl"
             >
               Register
