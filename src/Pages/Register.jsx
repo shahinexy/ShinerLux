@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import toast, { Toaster } from "react-hot-toast";
 import { useContext, useState } from "react";
@@ -10,6 +10,8 @@ const Register = () => {
   const { createUser } = useContext(authContext);
   const [showHide, setShowHide] = useState(true);
   const [passType, setPassType] = useState(true);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const {
     register,
@@ -28,8 +30,10 @@ const Register = () => {
     } else {
       createUser(data.email, data.pass)
         .then((result) => {
-          console.log(result);
           toast.success("Registation Success");
+          if(result){
+            navigate(location?.state ? location.state : "/")
+          }
         })
         .catch((error) => {
           console.log(error);

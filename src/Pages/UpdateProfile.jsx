@@ -9,6 +9,7 @@ import { useForm } from "react-hook-form";
 
 const UpdateProfile = () => {
   const { user, updateUser } = useContext(authContext);
+  console.log(user);
 
   const {
     register,
@@ -75,7 +76,7 @@ const UpdateProfile = () => {
                   className="mt-2 px-3 py-2 w-full text-black"
                   type="email"
                   name="email"
-                  value={"shahin@gmail"}
+                  value={user ? user.email : ''}
                 />
               </div>
               <div>

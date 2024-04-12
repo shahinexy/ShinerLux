@@ -34,7 +34,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/singleCard/:id",
-        element: <SingleCard></SingleCard>,
+        element: (
+          <PrivetRout>
+            <SingleCard></SingleCard>
+          </PrivetRout>
+        ),
         loader: () => fetch("/datas.json"),
       },
       {
