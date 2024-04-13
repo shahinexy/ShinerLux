@@ -9,18 +9,18 @@ import { useForm } from "react-hook-form";
 
 const UpdateProfile = () => {
   const { user, updateUser } = useContext(authContext);
-  console.log(user);
-
+console.log(user);
   const {
     register,
     handleSubmit,
-    // formState: { errors },
   } = useForm();
 
-  const onSubmit = data =>{
-    updateUser(data.name, data.photo)
-    .then()
-  }
+  const onSubmit = (data) => {
+    updateUser(data.name, data.photo).then( setTimeout(()=>{
+      window.location.reload()
+    }, 500));
+
+  };
   return (
     <div>
       <Helmet>
@@ -76,7 +76,7 @@ const UpdateProfile = () => {
                   className="mt-2 px-3 py-2 w-full text-black"
                   type="email"
                   name="email"
-                  value={user ? user.email : ''}
+                  value={user ? user.email : ""}
                 />
               </div>
               <div>
@@ -84,7 +84,7 @@ const UpdateProfile = () => {
                   <FaUser></FaUser> User Name
                 </p>
                 <input
-                {...register('name')}
+                  {...register("name")}
                   className="mt-2 px-3 py-2 w-full text-black"
                   type="text"
                   name="name"
@@ -96,7 +96,7 @@ const UpdateProfile = () => {
                   <FaCamera></FaCamera> Photo URL
                 </p>
                 <input
-                {...register("photo")}
+                  {...register("photo")}
                   className="mt-2 px-3 py-2 w-full text-black"
                   type="text"
                   name="photo"
@@ -104,7 +104,9 @@ const UpdateProfile = () => {
                 />
               </div>
               <div>
-                <button className="btn btn-ghost md:text-lg border-white rounded-none hover:border-secondary hover:text-secondary">Update Profile</button>
+                <button className="btn btn-ghost md:text-lg border-white rounded-none hover:border-secondary hover:text-secondary">
+                  Update Profile
+                </button>
               </div>
             </form>
           </div>

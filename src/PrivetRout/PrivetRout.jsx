@@ -9,7 +9,7 @@ const PrivetRout = ({children}) => {
     const location = useLocation()
 
     if(loader){
-        return <div className="flex justify-center items-center h-screen"><span className="loading loading-infinity loading-lg"></span></div>
+        return <div className="flex justify-center items-center h-screen"><span className="loading loading-infinity loading-lg text-primary"></span></div>
     }
     if(user) {
         return children;

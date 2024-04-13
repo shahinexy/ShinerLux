@@ -7,7 +7,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Helmet } from "react-helmet-async";
 
 const Register = () => {
-  const { createUser } = useContext(authContext);
+  const { createUser, updateUser, setUser } = useContext(authContext);
   const [showHide, setShowHide] = useState(true);
   const [passType, setPassType] = useState(true);
   const location = useLocation();
@@ -32,7 +32,11 @@ const Register = () => {
         .then((result) => {
           toast.success("Registation Success");
           if(result){
-            navigate(location?.state ? location.state : "/")
+            navigate("/")
+            updateUser(data.name, data.photo)
+            .then( setTimeout(()=>{
+              window.location.reload()
+            }, 1000))
           }
         })
         .catch((error) => {
