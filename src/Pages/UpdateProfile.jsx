@@ -13,7 +13,12 @@ console.log(user);
   const {
     register,
     handleSubmit,
-  } = useForm();
+  } = useForm({
+    defaultValues: {
+      name: user ? user.displayName : '',
+      photo : user ? user.photoURL : ''
+    }
+  });
 
   const onSubmit = (data) => {
     updateUser(data.name, data.photo).then( setTimeout(()=>{
@@ -63,7 +68,7 @@ console.log(user);
 
         <div className="my-5 lg:px-20 md:px-10">
           <h2 className="text-xl font-semibold pb-2 border-b-2 border-secondary">
-            Eid Profile
+            Edit Profile
           </h2>
           <div className="lg:px-10 px-5 my-5 ">
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
@@ -88,7 +93,8 @@ console.log(user);
                   className="mt-2 px-3 py-2 w-full text-black"
                   type="text"
                   name="name"
-                  placeholder="name"
+                  placeholder='name'
+                  // defaultValue={user ? user.displayName : ''}
                 />
               </div>
               <div>
@@ -100,7 +106,7 @@ console.log(user);
                   className="mt-2 px-3 py-2 w-full text-black"
                   type="text"
                   name="photo"
-                  placeholder="URL"
+                  placeholder='url'
                 />
               </div>
               <div>
