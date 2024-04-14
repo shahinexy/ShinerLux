@@ -69,7 +69,7 @@ const About = () => {
 
                 {/* testimonial  */}
                 <h1 className='md:text-3xl text-2xl font-bold text-center text-black md:mt-20 my-5'>Our Client <span className='text-secondary'>Review</span></h1>
-                <div className='bg-primary p-5 md:w-2/3 mx-auto my-7 shadow-lg shadow-secondary'>
+                <div className='bg-primary p-5 md:w-2/3 mx-auto my-7 shadow-md shadow-secondary'>
                     <div className='text-4xl text-secondary'>
                         <FaQuoteLeft></FaQuoteLeft>
                     </div>

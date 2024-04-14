@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Cards from "../components/Cards";
 import Slider from "../components/Slider";
 import { useLoaderData } from 'react-router-dom';
+import HomeEnd from './../components/HomeEnd';
 
 const Home = () => {
     const datas = useLoaderData()
@@ -12,6 +13,7 @@ const Home = () => {
             </Helmet>
             <Slider></Slider>
             <div className="max-w-7xl mx-auto p-5">
+                {/* card section  */}
                 <div className="md:my-8 my-5">
                     <div className="md:w-2/3 mx-auto text-center">
                         <h2 data-aos="fade-down-right" className="md:text-4xl text-2xl font-bold my-5">GET YOUR <span className="text-secondary">LUXURIOUS</span> PROPERTIES</h2>
@@ -23,6 +25,8 @@ const Home = () => {
                         }
                     </div>
                 </div>
+                {/* other section of home */}
+                <HomeEnd></HomeEnd>
             </div>
         </div>
     );

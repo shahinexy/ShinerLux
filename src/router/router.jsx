@@ -30,7 +30,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About></About>,
+        element: (
+          <PrivetRout>
+            <About></About>
+          </PrivetRout>
+        ),
       },
       {
         path: "/singleCard/:id",
