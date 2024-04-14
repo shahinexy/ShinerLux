@@ -1,4 +1,4 @@
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import toast, { Toaster } from "react-hot-toast";
 import { useContext, useState } from "react";
@@ -7,10 +7,9 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Helmet } from "react-helmet-async";
 
 const Register = () => {
-  const { createUser, updateUser, setUser } = useContext(authContext);
+  const { createUser, updateUser } = useContext(authContext);
   const [showHide, setShowHide] = useState(true);
   const [passType, setPassType] = useState(true);
-  const location = useLocation();
   const navigate = useNavigate();
 
   const {

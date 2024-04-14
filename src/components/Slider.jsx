@@ -34,7 +34,7 @@ const Slider = () => {
           <SwiperSlide><img className="w-full md:h-[90vh] h-[50vh]" src={slid1} alt="" /></SwiperSlide>
         </Swiper>
         <div className="absolute bottom-0 text-white md:py-6 py-1 bg-black/50 w-full z-30 flex justify-center flex-col items-center md:space-y-5 space-y-2">
-            <h1 className="md:text-4xl text-lg md:font-bold font-medium text-center">GET THE BEST DEAL!</h1>
+            <h1 data-aos="zoom-out-down" className="md:text-4xl text-lg md:font-bold font-medium text-center">GET THE BEST DEAL!</h1>
             <button className="btn md:btn-md btn-sm bg-secondary md:py-0 border-secondary text-white md:text-lg md:font-bold rounded-none hover:bg-primary">Get In Touch</button>
         </div>
       </div>

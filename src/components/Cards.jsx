@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const Cards = ({ data }) => {
+const Cards = ({ data, idx }) => {
   const {
     id,
     image,
@@ -15,7 +15,7 @@ const Cards = ({ data }) => {
   } = data;
   return (
     <div>
-      <div className="bg-primary text-white shadow-md shadow-black">
+      <div data-aos={idx % 2 === 0 ? "fade-down-right" : "fade-down-left"}  data-aos-duration="1000" className="bg-primary text-white shadow-md shadow-black">
         <div className="relative">
           <img
             className="w-full h-56 shadow-md shadow-secondary"
