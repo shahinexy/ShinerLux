@@ -2,12 +2,12 @@ import { createBrowserRouter } from "react-router-dom";
 import Root from "../Root/Root";
 import Home from "../Pages/Home";
 import UpdateProfile from "../Pages/UpdateProfile";
-import UserProfile from "../Pages/UserProfile";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import SingleCard from "../components/SingleCard";
 import ErrorPage from "../Pages/ErrorPage";
 import PrivetRout from "../PrivetRout/PrivetRout";
+import About from "../Pages/About";
 
 const router = createBrowserRouter([
   {
@@ -29,8 +29,8 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/userProfile",
-        element: <UserProfile></UserProfile>,
+        path: "/about",
+        element: <About></About>,
       },
       {
         path: "/singleCard/:id",

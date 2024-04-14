@@ -37,7 +37,7 @@ const NavBar = () => {
       </li>
       <li>
         <NavLink
-          to={"/userProfile"}
+          to={"/about"}
           className={({ isActive, isPending }) =>
             isPending
               ? "text-white"
@@ -46,7 +46,7 @@ const NavBar = () => {
               : "text-white"
           }
         >
-          User Profile
+          About Us
         </NavLink>
       </li>
     </>

@@ -15,7 +15,11 @@ const Cards = ({ data, idx }) => {
   } = data;
   return (
     <div>
-      <div data-aos={idx % 2 === 0 ? "fade-down-right" : "fade-down-left"}  data-aos-duration="1000" className="bg-primary text-white shadow-md shadow-black">
+      <div
+        data-aos={idx % 2 === 0 ? "fade-down-right" : "fade-down-left"}
+        data-aos-duration="1000"
+        className="bg-primary text-white shadow-md shadow-black"
+      >
         <div className="relative">
           <img
             className="w-full h-56 shadow-md shadow-secondary"
@@ -54,6 +58,7 @@ const Cards = ({ data, idx }) => {
 
 Cards.propTypes = {
   data: PropTypes.object.isRequired,
+  idx: PropTypes.number.isRequired,
 };
 
 export default Cards;
