@@ -49,6 +49,20 @@ const NavBar = () => {
           About Us
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to={"/contact"}
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "text-white"
+              : isActive
+              ? "bg-secondary rounded-none border border-secondary"
+              : "text-white"
+          }
+        >
+          Contact Us
+        </NavLink>
+      </li>
     </>
   );
   return (
