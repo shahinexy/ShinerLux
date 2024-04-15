@@ -7,7 +7,7 @@ import HomeEnd from "./../components/HomeEnd";
 const Home = () => {
   const datas = useLoaderData();
   return (
-    <div>
+    <div className="overflow-hidden">
       <Helmet>
         <title>ShinerLux | Home</title>
       </Helmet>
