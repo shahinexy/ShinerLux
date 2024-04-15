@@ -71,7 +71,7 @@ const About = () => {
         <h1 className="md:text-3xl text-2xl font-bold text-center text-black md:mt-20 my-5">
           Meet Our <span className="text-secondary">Team</span>
         </h1>
-        <div className="grid md:grid-cols-4 grid-cols-1 my-10 gap-7">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 my-10 gap-7">
           <div>
             <img className="w-full h-72" src={img5} alt="" />
             <div>

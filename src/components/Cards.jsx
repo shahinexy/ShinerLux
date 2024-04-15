@@ -18,7 +18,7 @@ const Cards = ({ data, idx }) => {
       <div
         data-aos={idx % 2 === 0 ? "fade-down-right" : "fade-down-left"}
         data-aos-duration="1000"
-        className="bg-primary text-white shadow-md shadow-black"
+        className="bg-primary text-white shadow-md shadow-black h-full"
       >
         <div className="relative">
           <img
