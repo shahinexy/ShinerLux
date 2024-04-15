@@ -30,28 +30,19 @@ const About = () => {
           <div>
             <h3 className="text-xl font-bold text-primary mb-3">Our Mission</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
-              veniam sequi quidem neque aut ipsam facilis ea, id eveniet
-              expedita in commodi rerum saepe corporis eaque accusantium laborum
-              nisi quia.
+            We strive to provide exceptional luxury real estate experiences. We aim to exceed client expectations with personalized service and expert guidance. Our commitment is to help you find your perfect dream home.
             </p>
           </div>
           <div>
             <h3 className="text-xl font-bold text-primary mb-3">Our Vision</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
-              veniam sequi quidem neque aut ipsam facilis ea, id eveniet
-              expedita in commodi rerum saepe corporis eaque accusantium laborum
-              nisi quia.
+            To be the leading authority in luxury real estate, setting new standards of excellence. We envision creating lasting relationships with our clients, built on trust and exceptional service. Our goal is to redefine the luxury home buying experience
             </p>
           </div>
           <div>
             <h3 className="text-xl font-bold text-primary mb-3">Our Values</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
-              veniam sequi quidem neque aut ipsam facilis ea, id eveniet
-              expedita in commodi rerum saepe corporis eaque accusantium laborum
-              nisi quia.
+            Integrity, Excellence, and Personalized Service. At [Your Company Name], we uphold the highest standards of honesty and professionalism in all our dealings. We are dedicated to delivering excellence in every aspect of the luxury real estate process, prioritizing our clients needs and aspirations.
             </p>
           </div>
           <div>
@@ -59,10 +50,7 @@ const About = () => {
               Our Resources
             </h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
-              veniam sequi quidem neque aut ipsam facilis ea, id eveniet
-              expedita in commodi rerum saepe corporis eaque accusantium laborum
-              nisi quia.
+            Comprehensive market insights, expert guidance, and innovative tools. we provide valuable resources to empower our clients in their luxury real estate journey. From detailed property analyses to personalized consultations, we equip you with the knowledge and support needed to make informed decisions.
             </p>
           </div>
         </div>
@@ -120,10 +108,7 @@ const About = () => {
               <p className="text-white md:text-xl font-semibold">Jacks parow</p>
             </div>
             <p className="text-white my-3">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
-              velit libero tempore. Quis cupiditate similique placeat et, hic
-              non dignissimos doloremque tempore natus dolor odio quo architecto
-              inventore aliquid nisi.
+            Working with ShinerLux was a enjoyable experience. Their team's expertise in luxury real estate is unmatched, and they truly understand the needs and preferences of their clients. From the initial consultation to closing, they provided exceptional service and guidance, making the home buying process effortless. I highly recommend ShinerLux to anyone looking for their dream luxury property.
             </p>
           </div>
           <div className="text-4xl text-secondary flex justify-end">

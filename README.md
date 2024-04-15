@@ -1,6 +1,6 @@
 # ShinerLux
 
-Live URL: 
+Live URL: https://ph-assignment-9-5c9a4.web.app/
 
 ## Featuers
  - Showcase stunning, high-resolution images and detailed descriptions of your luxurious properties, giving potential buyers an immersive experience of the listings.

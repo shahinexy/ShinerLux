@@ -24,9 +24,7 @@ const Home = () => {
               PROPERTIES
             </h2>
             <p data-aos="fade-down-left">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
-              voluptatem provident necessitatibus tempore voluptates laudantium
-              earum? Pariatur, odio nostrum, cum officia beatae culpa.
+            Discover unparalleled luxury with our exquisite collection of premium properties. From opulent estates to sophisticated penthouses, explore curated listings that redefine elegance and exclusivity. Your dream home awaits.
             </p>
           </div>
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 md:my-12 my-5">

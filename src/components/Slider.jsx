@@ -29,19 +29,19 @@ const Slider = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <img className="w-full md:h-[90vh] h-[50vh]" src={slid5} alt="" />
+            <img className="w-full md:h-[90vh] h-[40vh]" src={slid5} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="w-full md:h-[90vh] h-[50vh]" src={slid1} alt="" />
+            <img className="w-full md:h-[90vh] h-[40vh]" src={slid1} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="w-full md:h-[90vh] h-[50vh]" src={slid3} alt="" />
+            <img className="w-full md:h-[90vh] h-[40vh]" src={slid3} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="w-full md:h-[90vh] h-[50vh]" src={slid4} alt="" />
+            <img className="w-full md:h-[90vh] h-[40vh]" src={slid4} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="w-full md:h-[90vh] h-[50vh]" src={slid2} alt="" />
+            <img className="w-full md:h-[90vh] h-[40vh]" src={slid2} alt="" />
           </SwiperSlide>
         </Swiper>
         <div className="absolute bottom-0 text-white md:py-6 py-1 bg-black/50 w-full z-30 flex justify-center flex-col items-center md:space-y-5 space-y-2">
@@ -52,7 +52,7 @@ const Slider = () => {
             GET THE BEST DEAL!
           </h1>
           <Link to={'/contact'}>
-            <button className="btn md:btn-md btn-sm bg-secondary md:py-0 border-secondary text-white md:text-lg md:font-bold rounded-none hover:bg-primary">
+            <button className="btn md:btn-md btn-md bg-secondary md:py-0 border-secondary text-white md:text-lg md:font-bold rounded-none hover:bg-primary">
               Get In Touch
             </button>
           </Link>
