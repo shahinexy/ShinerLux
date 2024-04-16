@@ -1,35 +1,23 @@
 import { useContext } from "react";
-import { Helmet } from "react-helmet-async";
 import { authContext } from "../AuthProvider/AuthProvider";
 import { FaCamera, FaUser, FaUserCircle } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 import { TfiEmail } from "react-icons/tfi";
 import { useForm } from "react-hook-form";
-// import { updateProfile } from "firebase/auth";
-// import auth from "../Firebase/firebase.config";
 
-const UpdateProfile = () => {
-  const { user, updateUser } = useContext(authContext);
-  
-  const {
-    register,
-    handleSubmit,
-  } = useForm({
+const UserProfile = () => {
+  const { user } = useContext(authContext);
+  const { register } = useForm({
     defaultValues: {
-      name: user ? user.displayName : '',
-      photo : user ? user.photoURL : ''
-    }
+      name: user ? user.displayName : "",
+      photo: user ? user.photoURL : "",
+    },
   });
 
-  const onSubmit = (data) => {
-    updateUser(data.name, data.photo).then( setTimeout(()=>{
-      window.location.reload()
-    }, 500));
-
-  };
   return (
     <div>
       <Helmet>
-        <title>Update Profile</title>
+        <title>User Profile</title>
       </Helmet>
       <div className=" md:w-2/3 text-white p-8 bg-primary mx-auto md:my-20 my-6">
         <div className="text-center flex justify-center flex-col items-center mb-8">
@@ -67,11 +55,9 @@ const UpdateProfile = () => {
         </div>
 
         <div className="my-5 lg:px-20 md:px-10">
-          <h2 className="text-xl font-semibold pb-2 border-b-2 border-secondary">
-            Edit Profile
-          </h2>
+          <h2 className=" border-b-2 border-secondary"></h2>
           <div className="lg:px-10 px-5 my-5 ">
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+            <form className="space-y-6">
               <div>
                 <p className="flex gap-2 items-center">
                   <TfiEmail></TfiEmail> Email
@@ -93,8 +79,8 @@ const UpdateProfile = () => {
                   className="mt-2 px-3 py-2 w-full text-black"
                   type="text"
                   name="name"
-                  placeholder='name'
-                  // defaultValue={user ? user.displayName : ''}
+                  placeholder="name"
+                  disabled
                 />
               </div>
               <div>
@@ -106,13 +92,9 @@ const UpdateProfile = () => {
                   className="mt-2 px-3 py-2 w-full text-black"
                   type="text"
                   name="photo"
-                  placeholder='url'
+                  placeholder="url"
+                  disabled
                 />
-              </div>
-              <div>
-                <button className="btn btn-ghost md:text-lg border-white rounded-none hover:border-secondary hover:text-secondary">
-                  Update Profile
-                </button>
               </div>
             </form>
           </div>
@@ -122,4 +104,4 @@ const UpdateProfile = () => {
   );
 };
 
-export default UpdateProfile;
+export default UserProfile;

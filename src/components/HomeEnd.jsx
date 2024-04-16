@@ -11,7 +11,7 @@ const HomeEnd = () => {
           <img className="w-full h-full" src={img} alt="" />
         </div>
         <div data-aos="fade-down-left" className="space-y-5">
-          <h2 className="md:text-4xl text-2xl font-bold">
+          <h2 className="md:text-4xl text-3xl font-bold">
             Find your new <span className="text-secondary">home</span> with us
           </h2>
           <p>
@@ -75,7 +75,7 @@ const HomeEnd = () => {
           <div className="flex justify-center text-7xl text-secondary">
             <FaHome></FaHome>
           </div>
-          <h2 className="md:text-4xl text-2xl font-bold">
+          <h2 className="md:text-4xl text-3xl font-bold">
             Get your dream house
           </h2>
           <p>

@@ -35,6 +35,22 @@ const NavBar = () => {
           Update Profile
         </NavLink>
       </li>
+      {
+          user &&  <li>
+          <NavLink
+            to={"/userProfile"}
+            className={({ isActive, isPending }) =>
+              isPending
+                ? "text-white"
+                : isActive
+                ? "bg-secondary rounded-none border border-secondary"
+                : "text-white"
+            }
+          >
+            User Profile
+          </NavLink>
+        </li>
+      }
       <li>
         <NavLink
           to={"/about"}
@@ -96,6 +112,22 @@ const NavBar = () => {
                 className="menu menu-xl dropdown-content mt-3 z-50 p-2 shadow bg-primary rounded-box w-52"
               >
                 {navLinks}
+
+                {user ? (
+                  <button
+                    onClick={() => LogOutUser()}
+                    className="my-3 px-5 cursor-pointer py-2 font-semibold bg-secondary border border-secondary text-white hover:bg-primary hover:border-white"
+                  >
+                    Log Out
+                  </button>
+                ) : (
+                  <Link
+                    to={"/login"}
+                    className="px-5 cursor-pointer py-2 font-semibold bg-secondary border border-secondary text-white hover:bg-primary hover:border-white"
+                  >
+                    Login
+                  </Link>
+                )}
               </ul>
             </div>
             <Link to={"/"} className="font-bold btn-ghost text-xl">
@@ -110,15 +142,30 @@ const NavBar = () => {
           <div className="navbar-end space-x-4">
             {user ? (
               <>
-              <div className="relative ">
-              <div className=" absolute right-0 h-full w-10 opacity-0 hover:w-52  hover:opacity-100 duration-300 transition-all">
-                <p className=" pr-14 text-end pt-2">{user?.displayName || 'Unknown'}</p>
-              </div>
-              {user.photoURL ? <><img className="w-10 h-10 rounded-full" src={user.photoURL} alt="" /></> : <FaUserCircle className="text-4xl" />}
-              </div>
-              <button onClick={()=> LogOutUser()} className="px-5 cursor-pointer py-2 font-semibold bg-secondary border border-secondary text-white hover:bg-primary hover:border-white">
-                Log Out
-              </button>
+                <div className="relative ">
+                  <div className=" absolute right-0 h-full w-10 opacity-0 hover:w-52  hover:opacity-100 duration-300 transition-all">
+                    <p className=" pr-14 text-end pt-2">
+                      {user?.displayName || "Unknown"}
+                    </p>
+                  </div>
+                  {user.photoURL ? (
+                    <>
+                      <img
+                        className="w-10 h-10 rounded-full"
+                        src={user.photoURL}
+                        alt=""
+                      />
+                    </>
+                  ) : (
+                    <FaUserCircle className="text-4xl" />
+                  )}
+                </div>
+                <button
+                  onClick={() => LogOutUser()}
+                  className="md:inline-block hidden px-5 cursor-pointer py-2 font-semibold bg-secondary border border-secondary text-white hover:bg-primary hover:border-white"
+                >
+                  Log Out
+                </button>
               </>
             ) : (
               <Link

@@ -9,6 +9,7 @@ import ErrorPage from "../Pages/ErrorPage";
 import PrivetRout from "../PrivetRout/PrivetRout";
 import About from "../Pages/About";
 import Contact from "../Pages/Contact";
+import UserProfile from "../Pages/UserProfile";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,14 @@ const router = createBrowserRouter([
         ),
       },
       {
+        path: "/userProfile",
+        element: (
+          <PrivetRout>
+            <UserProfile></UserProfile>
+          </PrivetRout>
+        ),
+      },
+      {
         path: "/about",
         element: (
           <PrivetRout>
@@ -38,8 +47,8 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: '/contact',
-        element: <Contact></Contact>
+        path: "/contact",
+        element: <Contact></Contact>,
       },
       {
         path: "/singleCard/:id",

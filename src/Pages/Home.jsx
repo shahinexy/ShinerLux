@@ -18,7 +18,7 @@ const Home = () => {
           <div className="md:w-2/3 mx-auto text-center">
             <h2
               data-aos="fade-down-right"
-              className="md:text-4xl text-2xl font-bold my-5"
+              className="md:text-4xl text-3xl font-bold my-5"
             >
               GET YOUR <span className="text-secondary">LUXURIOUS</span>{" "}
               PROPERTIES

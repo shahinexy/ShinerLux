@@ -16,14 +16,14 @@ const About = () => {
         className="bg-no-repeat bg-cover bg-bottom md:h-[55vh] h-[35vh]"
         style={{ backgroundImage: `url(${img})` }}
       >
-        <h1 className="md:text-5xl text-3xl h-full flex items-center justify-center text-white bg-black/40 font-bold">
+        <h1 className="md:text-5xl text-4xl h-full flex items-center justify-center text-white bg-black/40 font-bold">
           More About Us
         </h1>
       </div>
 
-      {/* about our company section  */}
       <div className="max-w-7xl mx-auto px-5">
-        <h1 className="md:text-3xl text-2xl font-bold text-center text-black md:my-8 my-5">
+      {/* about our company section  */}
+        <h1 className="text-3xl font-bold text-center text-black md:my-8 my-5">
           About Our <span className="text-secondary">Company</span>
         </h1>
         <div className="grid md:grid-cols-2 grid-cols-1 my-5 md:my-12 md:gap-12 gap-5">
@@ -56,7 +56,7 @@ const About = () => {
         </div>
 
         {/* Our team section  */}
-        <h1 className="md:text-3xl text-2xl font-bold text-center text-black md:mt-20 my-5">
+        <h1 className="text-3xl font-bold text-center text-black md:mt-20 my-5">
           Meet Our <span className="text-secondary">Team</span>
         </h1>
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 my-10 gap-7">
@@ -91,7 +91,7 @@ const About = () => {
         </div>
 
         {/* testimonial  */}
-        <h1 className="md:text-3xl text-2xl font-bold text-center text-black md:mt-20 my-5">
+        <h1 className="text-3xl font-bold text-center text-black md:mt-20 my-5">
           Our Client <span className="text-secondary">Review</span>
         </h1>
         <div className="bg-primary p-5 md:w-2/3 mx-auto my-7 shadow-md shadow-secondary">
