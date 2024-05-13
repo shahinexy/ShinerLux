@@ -21,22 +21,23 @@ const NavBar = () => {
           Home
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          to={"/updateProfile"}
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "text-white"
-              : isActive
-              ? "bg-secondary rounded-none border border-secondary"
-              : "text-white"
-          }
-        >
-          Update Profile
-        </NavLink>
-      </li>
-      {
-          user &&  <li>
+      {user && (
+        <li>
+          <NavLink
+            to={"/updateProfile"}
+            className={({ isActive, isPending }) =>
+              isPending
+                ? "text-white"
+                : isActive
+                ? "bg-secondary rounded-none border border-secondary"
+                : "text-white"
+            }
+          >
+            Update Profile
+          </NavLink>
+        </li>
+      )}
+        <li>
           <NavLink
             to={"/userProfile"}
             className={({ isActive, isPending }) =>
@@ -50,7 +51,6 @@ const NavBar = () => {
             User Profile
           </NavLink>
         </li>
-      }
       <li>
         <NavLink
           to={"/about"}

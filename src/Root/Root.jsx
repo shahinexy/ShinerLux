@@ -8,7 +8,7 @@ AOS.init();
 
 const Root = () => {
   return (
-    <div className="font-roboto">
+    <div className="font-roboto  overflow-hidden">
       <div className="bg-primary">
         <NavBar></NavBar>
       </div>

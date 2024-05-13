@@ -20,6 +20,11 @@ const githubProvider = new GithubAuthProvider();
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loader, setLoader] = useState(true)
+  const [setIsupdate, seyIsUpdate] = useState(true)
+
+  const refetch = ()=>{
+    seyIsUpdate(!setIsupdate)
+  }
 
   //create user
   const createUser = (email, pass) => {
@@ -83,7 +88,9 @@ const AuthProvider = ({ children }) => {
     googleSignIn,
     gihubSignIn,
     updateUser,
-    loader
+    loader,
+    seyIsUpdate,
+    refetch
   };
   return (
     <div>

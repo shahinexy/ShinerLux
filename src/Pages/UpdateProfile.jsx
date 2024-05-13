@@ -8,23 +8,21 @@ import { useForm } from "react-hook-form";
 // import auth from "../Firebase/firebase.config";
 
 const UpdateProfile = () => {
-  const { user, updateUser } = useContext(authContext);
-  
-  const {
-    register,
-    handleSubmit,
-  } = useForm({
+  const { user, updateUser, refetch } = useContext(authContext);
+  console.log(user);
+
+  const { register, handleSubmit } = useForm({
     defaultValues: {
-      name: user ? user.displayName : '',
-      photo : user ? user.photoURL : ''
-    }
+      name: user ? user.displayName : "",
+      photo: user ? user.photoURL : "",
+    },
   });
 
   const onSubmit = (data) => {
-    updateUser(data.name, data.photo).then( setTimeout(()=>{
-      window.location.reload()
-    }, 500));
-
+    updateUser(data.name, data.photo)
+    .then(
+      () => refetch()
+    );
   };
   return (
     <div>
@@ -93,7 +91,7 @@ const UpdateProfile = () => {
                   className="mt-2 px-3 py-2 w-full text-black"
                   type="text"
                   name="name"
-                  placeholder='name'
+                  placeholder="name"
                   // defaultValue={user ? user.displayName : ''}
                 />
               </div>
@@ -106,7 +104,7 @@ const UpdateProfile = () => {
                   className="mt-2 px-3 py-2 w-full text-black"
                   type="text"
                   name="photo"
-                  placeholder='url'
+                  placeholder="url"
                 />
               </div>
               <div>
